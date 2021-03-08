@@ -2,13 +2,13 @@ hidden-parameter-plugin
 =======================
 
 ##Characteristics
+
 		1. Parameters once more, it looks bad user experience.this plugin can resolve the problem.
 		2. Some key parameters, once modified, can lead to the risk.these parameters,only administrator can modify,to reduce the risk.
 		3. Hidden parameter,only hide in the build execution, in job configuration's page can modify.
 		4. After the build, parameter list can display hidden parameters.
 		5. Compatible with Pipeline scripts.
-		    > hidden(name: 'MY_HIDDEN_FIELD', defaultValue: 'CATS', description: 'My descriptive description')
-
+	
 
 ## How to build this project and generate the .hpi file
 
@@ -31,6 +31,15 @@ Follow these steps:
 > - hidden-parameter:0.0.5:https://github.com/fintechinnovationas/hidden-parameter-plugin/releases/download/v0.0.5/hidden-parameter.hpi
 
 This Github project is public, so that Jenkins can easily download the file.
+
+## How to use it in Pipeline scripts
+
+```
+parameters {
+    hidden(name: 'MY_HIDDEN_FIELD', defaultValue: 'CATS', description: 'My descriptive description')
+}
+```
+
 
 ##Use case
 After the plugin is installed,in job configuration's page,you can see Hidden Parameter:<br>
