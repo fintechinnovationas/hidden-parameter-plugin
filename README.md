@@ -1,7 +1,7 @@
 hidden-parameter-plugin
 =======================
 
-##Characteristics
+## Characteristics
 
 		1. Parameters once more, it looks bad user experience.this plugin can resolve the problem.
 		2. Some key parameters, once modified, can lead to the risk.these parameters,only administrator can modify,to reduce the risk.
@@ -14,7 +14,7 @@ hidden-parameter-plugin
 
 > mvn clean package
 
-This command create the .hpi file in the target directoy.
+This command creates the .hpi file in the target directoy.
 
 ## How to install this plugin in our Jenkins configured as code
 
